@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "schema-validator"
-version = "1.145.0"
-description = "A package that allows us to use Pandera DataFrame Models to validate table schemas"
+name = "pandera-alchemy"
+version = "1.0.0"
+description = "A package that enables using Pandera DataFrame Models to validate SQL Alchemy table schemas"
 authors = ["Thomas Richards <thomas.richards@powin.com>"]
 readme = "README.md"
-packages = [{ include = "schema_validator" }]
+packages = [{ include = "pandera_alchemy" }]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 pandera = "^0.20.3"
-sqlalchemy = "~1.4"
+sqlalchemy = "^1.4" # Not compatible with SQLAlchemy 2.0
 pandas = "^1.5"
-numpy = ">=1.23,<1.27"
+numpy = "^1.23"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"

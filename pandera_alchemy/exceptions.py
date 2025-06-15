@@ -1,4 +1,4 @@
-"""Custom exceptions for the schema_validator package.
+"""Custom exceptions for the pandera_alchemy package.
 
 These exceptions are derived from Pandera and SQLAlchemy exceptions as well as
 a custom SchemaValidationError class so they can be easily caught and handled.

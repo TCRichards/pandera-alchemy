@@ -3,9 +3,9 @@ import datetime as dt
 import pandas as pd
 import pandera as pa
 import pytest
-import schema_validator.exceptions
+import pandera_alchemy.exceptions
 import sqlalchemy
-from schema_validator import Table
+from pandera_alchemy import Table
 from testcontainers.postgres import PostgresContainer
 
 
@@ -94,7 +94,7 @@ def test_single_column_invalid_dtype(postgres: PostgresContainer, column_type, c
     engine = create_table_from_dataframe(postgres, df, table_name, db_schema)
 
     example_table = Table(name=table_name, db_schema=db_schema, table_schema=InvalidSchema)
-    with pytest.raises(schema_validator.exceptions.SchemaValidationError):
+    with pytest.raises(pandera_alchemy.exceptions.SchemaValidationError):
         example_table.validate(engine)
 
 
@@ -144,5 +144,5 @@ def test_check_nullable_invalid(postgres: PostgresContainer, is_nullable: bool, 
 
     engine = create_table_from_dataframe(postgres, df, table_name, db_schema)
 
-    with pytest.raises(schema_validator.exceptions.SchemaValidationError):
+    with pytest.raises(pandera_alchemy.exceptions.SchemaValidationError):
         example_table.validate(engine, check_nullable=True)

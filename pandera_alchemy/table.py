@@ -8,9 +8,9 @@ import pandera as pa
 import psycopg2
 import sqlalchemy
 
-from schema_validator.exceptions import NoSuchTableError, SchemaValidationError
-from schema_validator.logger import logger
-from schema_validator.unified_types import NoneType, UnifiedColumn, get_unified_type
+from pandera_alchemy.exceptions import NoSuchTableError, SchemaValidationError
+from pandera_alchemy.logger import logger
+from pandera_alchemy.unified_types import NoneType, UnifiedColumn, get_unified_type
 
 
 @dataclass

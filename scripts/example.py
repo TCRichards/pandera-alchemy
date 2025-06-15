@@ -1,7 +1,7 @@
 import datetime as dt
 
-from schema_validator.common_tables import get_cell_group_summary_report_table
-from schema_validator.redshift import create_rs_engine, create_rs_rc_connection
+from pandera_alchemy.common_tables import get_cell_group_summary_report_table
+from pandera_alchemy.redshift import create_rs_engine, create_rs_rc_connection
 
 if __name__ == "__main__":
     engine = create_rs_engine()

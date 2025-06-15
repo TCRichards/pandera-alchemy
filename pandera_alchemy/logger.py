@@ -2,7 +2,7 @@ import logging
 import os
 
 # Create the logger
-logger = logging.getLogger("SCHEMA_VALIDATOR")
+logger = logging.getLogger("pandera_alchemy")
 logger.setLevel(os.environ.get("SCHEMA_LOG_LEVEL", "DEBUG").upper())
 
 format_str = "[%(levelname)s: %(asctime)s UTC - %(filename)s:%(lineno)s - %(funcName)s()] %(message)s"

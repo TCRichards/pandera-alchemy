@@ -3,7 +3,7 @@ import datetime as dt
 import pandera as pa
 import pytest
 import sqlalchemy
-from schema_validator import unified_types as ut
+from pandera_alchemy import unified_types as ut
 
 
 def test_get_unified_type_boolean():

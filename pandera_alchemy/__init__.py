@@ -1,5 +1,5 @@
-from schema_validator.table import Table
-from schema_validator.unified_types import (
+from pandera_alchemy.table import Table
+from pandera_alchemy.unified_types import (
     Boolean,
     Date,
     DateTime,
