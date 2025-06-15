@@ -10,10 +10,42 @@ In modern data pipelines, ensuring that the structure of database tables matches
 
 ## Installation
 
-To add the `pandera_alchemy` as a dependency to a project, add it to the project's `pyproject.toml` file:
+### As a Library
+
+To install the `pandera_alchemy` package as a dependency, retrieve it from the Python Package Index (PyPI) using `pip` or `poetry`.
+
+```sh
+pip install pandera_alchemy
+```
+
+or 
+
+```sh
+poetry add pandera_alchemy
+```
+
+### Local Development
+
+If you want to contribute to the development of `pandera_alchemy`, you can clone the repository and set up a local development environment.
 
 
-Install the dependencies:
-    ```sh
-    poetry install
-    ```
+Clone the repository:
+```sh
+git clone https://github.com/TCRichards/pandera-alchemy.git
+```
+
+Change into the project directory:
+```sh
+cd pandera-alchemy
+```
+
+
+Create a virtual environment and install dependencies with `poetry`:
+```sh
+poetry install
+```
+
+
+# License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
