@@ -28,7 +28,7 @@ class Table:
 
         Args:
             name: The name of the table in the database.
-            db_schema: Which database schema the table resides in (e.g. "powin", "goblintest01", "analytics").
+            db_schema: Which database schema the table resides in.
             table_schema: The Pandera schema representing the structure of the table.
             print_schema: Whether to include the schema or just the name in the table's string representation.
         """

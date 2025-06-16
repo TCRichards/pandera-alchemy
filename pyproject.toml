@@ -2,7 +2,7 @@
 name = "pandera-alchemy"
 version = "1.0.0"
 description = "A package that enables using Pandera DataFrame Models to validate SQL Alchemy table schemas"
-authors = ["Thomas Richards <thomas.richards@powin.com>"]
+authors = ["Thomas Richards <thomas.c.richards@outlook.com>"]
 readme = "README.md"
 packages = [{ include = "pandera_alchemy" }]
 
